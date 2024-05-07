@@ -23,17 +23,17 @@
   </head>
   <body>
     <main>
-      <section class="section1">
+      <section id="home" class="section1">
         <header class="header">
           <div class="logo">
             <h2>Tealo</h2>
           </div>
           <nav class="nav1">
-            <a href="" class="home">Home</a>
-            <a href="">About</a>
-            <a href="">Service</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
+            <a href="#home" class="home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
           </nav>
         </header>
 
@@ -58,11 +58,12 @@
         </div>
       </section>
 
-      <section class="section2">
+      <!----------------------------------About me section---------------------------------------------------->
+      <section id="about" class="section2">
         <h1>ABOUT ME</h1>
         <article class="article-2">
           <div class="article-image">
-            <img src="images/1.jpg" alt="" />
+            <img src="images/1.jpg" alt="image" />
           </div>
 
           <div class="article-text">
@@ -100,7 +101,8 @@
         </article>
       </section>
 
-      <section class="section3">
+      <!----------------------------------Services section---------------------------------------------------->
+      <section id="service" class="section3">
         <h1>Awesome Services</h1>
         <article class="article-3">
           <!------------Box 1------------->
@@ -157,10 +159,9 @@
         </article>
       </section>
 
-      <!-------------------------Section4--------------------------->
-      <section class="section4">
+      <!----------------------------------Portfolio section---------------------------------------------------->
+      <section id="portfolio" class="section4">
         <h1>Portfolio</h1>
-
         <article class="article-4">
           <!------------------Box 1----------------->
           <div class="div div1">
@@ -182,14 +183,84 @@
             <img src="./Images/p4.jpg" alt="" />
           </div>
 
-           <!------------------Box 5----------------->
-           <div class="div div1">
+          <!------------------Box 5----------------->
+          <div class="div div1">
             <img src="./Images/p6.jpg" alt="" />
           </div>
 
-           <!------------------Box 6----------------->
-           <div class="div div1">
+          <!------------------Box 6----------------->
+          <div class="div div1">
             <img src="./Images/p9.jpg" alt="" />
+          </div>
+        </article>
+      </section>
+
+      <!----------------------------Reviews-------------------------->
+      <section class="rev-sect">
+        <h1>Clients Testimony</h1>
+        <article class="rev-art">
+          <!----------------------------Box1-------------------------->
+          <div class="rev-box">
+            <div class="sub-box1">
+              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto sit libero temporibus consequuntur? Odit, tenetur incidunt!"</p>
+            </div>
+            <img src="./Images/Client-headshot-1-Jim-Fahad-Digital.png" alt="image">
+            <p class="name">Hilton Jackson</p>
+            <p class="position">Chairman</p>
+          </div>
+
+            <!----------------------------Box2-------------------------->
+            <div class="rev-box">
+              <div class="sub-box1">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto sit libero temporibus consequuntur? Odit, tenetur incidunt!"</p>
+              </div>
+              <img src="./Images/Client-headshot-2-Jim-Fahad-Digital.png" alt="image">
+              <p class="name">Monica Gardea</p>
+              <p class="position">Executive Director</p>
+            </div>
+
+              <!----------------------------Box1-------------------------->
+          <div class="rev-box">
+            <div class="sub-box1">
+              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto sit libero temporibus consequuntur? Odit, tenetur incidunt!"</p>
+            </div>
+            <img src="./Images/Client-headshot-3-Jim-Fahad-Digital.png" alt="image">
+            <p class="name">James Holder</p>
+            <p class="position">Managing Director</p>
+          </div>
+        </article>
+      </section>
+
+      <!----------------------------Box1-------------------------->
+
+      
+
+      <!----------------------------------contact section---------------------------------------------------->
+      <section id="contact" class="section5">
+        <article class="article-5">
+          <div class="form-text">
+            <h1>Get In Touch</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nisi
+              sit fuga amet odit!
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <form action="">
+              <input type="text" placeholder="Full Name" required/>
+              <input type="email" placeholder="Valid Email" required/>
+
+              <textarea
+                name=""
+                id=""
+                cols="71"
+                rows="5"
+                placeholder="Message"
+                required
+              ></textarea>
+              <a href="#">Send Message</a>
+            </form>
           </div>
         </article>
       </section>
