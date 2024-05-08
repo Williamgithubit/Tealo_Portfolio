@@ -25,6 +25,7 @@
     padding: 4px 50px;
     position: fixed;
     background-color: var(--black-color);
+    z-index: 999;
 }
 
 .header h2{
@@ -61,7 +62,8 @@
 
 .section1 {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
+    padding-top: 10px;
     background-color: var(--black-color);
     margin-top: -18px;
     background-image: url(./Images/pngegg.png);
@@ -226,7 +228,7 @@ h1 span{
     padding: 20px 50px;
     margin-top: 30px;
     background-color: var(--light-gray);
-    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .article-3{
@@ -249,6 +251,12 @@ h1 span{
     min-height: 200px;
     background-color: var(--primary-color);
     padding: 10px;
+    transition: 0.5s ease;
+}
+
+.article-3 .boxes:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .boxes .header-text{
@@ -273,7 +281,7 @@ h1 span{
 }
 
 .icon img{
-    width: 25%;
+    width: 40%;
     margin: auto;
     margin-bottom: 10px;
 }
@@ -285,7 +293,7 @@ h1 span{
     height: 100vh;
     padding: 20px 50px;
     /* margin-top: 60px; */
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .section4 h1{
@@ -343,9 +351,16 @@ h1 span{
 .rev-art .rev-box{
     width: 24%;
     /* height: 50px; */
-    border: 1px solid #edebeb;
+    border: 1px solid #fcf9f9;
     margin-top: 20px;
     padding-bottom: 20px;
+    transition: 0.5s ease; 
+}
+
+.rev-art .rev-box:hover{
+    transform: scale(1.1);
+    /* border: none; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .rev-box img{
@@ -372,12 +387,73 @@ h1 span{
     letter-spacing: 2px;
 }
 
+/*---------------------------Blog Section----------------------*/
+
+.blog-sec{
+    width: 100%;
+    height: 90vh;
+    padding: 20px 50px;
+    margin: 50px 0;
+    
+}
+
+.blog-sec h1{
+    font-size: 50px;
+    font-family: 'teko';
+    text-align: center;
+}
+
+.blog-art{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.blog-box{
+    width: 30%;
+    padding: 10px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.blog-box:hover{
+    transform: scale(1.1);
+}
+
+.blog-box img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.blog-box .blog-title{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #414040;
+    font-weight: 600;
+}
+
+.blog-title span{
+    color: var(--text-color);
+}
+
+.blog-box .blog-post{
+    font-size: 19px;
+
+}
+
+
+
 /*--------------Section five (5)----------------*/
 
 .section5 {
     width: 100%;
     height: auto;
     padding: 20px 50px;
+    margin-top: -30px;
 }
 
 .article-5{
@@ -419,4 +495,50 @@ input[type="text"], input[type="email"]{
 
 .contact-form textarea{
     margin-bottom: 15px;
+}
+
+/*---------------------------Footer---------------------*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--black-color);
+    padding: 20px 50px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+footer h4{
+    color: var(--primary-color);
+    text-align: center;
+    /* margin-top: 50px; */
+}
+
+footer i{
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: var(--text-color);
+    transition: 0.5s ease;
+    transform: rotate(360deg);
+}
+
+/*-------------------Custom Scrollbar------------------------*/
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--text-color), var(--primary-color));
+    border-radius: 8px;
 }
